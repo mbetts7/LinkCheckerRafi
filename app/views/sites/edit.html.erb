@@ -1,0 +1,8 @@
+<%= @site.url %><br><br>
+
+<%= form_for @site do |f| %>
+  <%= f.text_field :url %>
+<%= f.submit %>
+<% end %>
+
+<%= link_to "Delete site", @site, method: :delete %>
